@@ -1,4 +1,4 @@
-# remove-tabs-on-save README
+# README
 
 ## Features
 This extension will do one thing, and **one thing only**.
