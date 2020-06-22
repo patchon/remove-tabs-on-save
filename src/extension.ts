@@ -1,7 +1,12 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-  vscode.window.showInformationMessage('Successfully enabled the exension remove-tabs-on-save.');
+  const showInit: any = vscode.workspace.getConfiguration('remove-tabs-on-save');
+
+  if (showInit.get("show-init")) {
+    vscode.window.showInformationMessage('Successfully enabled the exension remove-tabs-on-save.');
+    showInit.update("show-init", false, vscode.ConfigurationTarget.Global);
+  }
 
   vscode.workspace.onWillSaveTextDocument((e) => {
 
