@@ -23,8 +23,5 @@ color, which is, yes annoying. So to get rid of that annoyance I wrote this exte
 
 
 ## Release Notes
-### 1.0.1
-Hiding extension initialization message.
-
 ### 1.0.0
 Initial release
