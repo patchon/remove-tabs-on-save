@@ -3,7 +3,7 @@
   "displayName": "remove-tabs-on-save",
   "description": "Convert all tabs to spaces on save, no more - no less.",
   "publisher": "redlin",
-  "version": "1.1.0",
+  "version": "1.0.1",
   "license": "GPL-3.0-or-later",
   "engines": {
     "vscode": "^1.46.0"
