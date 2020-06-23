@@ -7,7 +7,7 @@ export function activate(context: vscode.ExtensionContext) {
   // Show message activating the plugin, only first time though
   if (conf.get("ignoreFileExtensions")[0] === "first-time") {
     vscode.window.showInformationMessage('Successfully enabled the exension remove-tabs-on-save.');
-    conf.update("ignoreFileExtensions", [], vscode.ConfigurationTarget.Global);
+    conf.update("ignoreFileExtensions", ["*.go"], vscode.ConfigurationTarget.Global);
   }
 
   vscode.workspace.onWillSaveTextDocument((e) => {
@@ -61,13 +61,27 @@ export function activate(context: vscode.ExtensionContext) {
     const range = new vscode.Range(firstLine.range.start, lastLine.range.end);
     const text = doc.getText(range);
 
+    // No need to do anything if we don't have any tabs,
+    if (text.search(/\t/ig) === -1) {
+      return;
+    }
+
     editor.edit(function (editBuilder) {
       editBuilder.replace(range, text.replace(/\t/ig, spaces));
     });
+
+    // LOL, this is such a fucking hack. Well, the whole extension is a hack but
+    // this takes it to a whole new level. Luckily this is not needed, just keeping
+    // it here fore reference since it took me way to long time to find on the
+    // internet.
+    // if (!editor.options.insertSpaces && config.get("set")) {
+    //   vscode.commands.executeCommand("editor.action.indentUsingSpaces");
+    //   setTimeout(() => {
+    //     vscode.commands.executeCommand("workbench.action.acceptSelectedQuickOpenItem");
+    //   }, 100);
+    // }
   });
 }
 
 // This method is called when your extension is deactivated
-export function deactivate() {
-  vscode.window.showInformationMessage('Successfully disabled the exension remove-tabs-on-save.');
-}
+export function deactivate() { }

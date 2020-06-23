@@ -1,9 +1,18 @@
-# Change Log
+# Changelog
+All notable changes to remove-tabs-on-save will be documented in this file.
 
-All notable changes to the "remove-tabs-on-save" extension will be documented in this file.
+## [1.2.0] - 2020-06-23
+### Changed
+- Make sure to not replace text if no tabs are detected
+- Make sure to exlude *.go by default
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [1.1.0] - 2020-06-22
+### Added
+- Option to ignore makefiles (on by default).
+- Option to ignore specified file-extensions.
 
-## [Unreleased]
+## [1.0.0] - 2020-06-21
+- Initial release.
 
-- Initial release
+#
+Changelog based on https://keepachangelog.com/
