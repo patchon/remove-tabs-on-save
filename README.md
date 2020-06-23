@@ -15,13 +15,16 @@ way for VS Code to do this automatically (not without me manually calling
 **editor.action.indentationToSpaces** with some sort of keyboard shortcut, and not
 even then all tabs are removed (ie. blocks that are commented are ignored)).
 
-> Note: Yes, I do know that some files require tabs (ie. makefiles), I simply disable the extension when handling those kind of files. Maybe one day I'll have a more sofisticated approuch (ie. a setting for this).
-
 ### Is it really that important ?
 Probably not, but since I really dislike tabs, I have them colored in an annoying
 color, which is, yes annoying. So to get rid of that annoyance I wrote this extension.
 
 
 ## Release Notes
+### 1.1.0
+Adding options
+- Ignore makefiles (on by default).
+- Ignore specified file-extensions.
+
 ### 1.0.0
 Initial release
