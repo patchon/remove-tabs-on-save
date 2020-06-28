@@ -34,7 +34,7 @@ then, as mentioned above, tabs within commented lines are ignored. New tabs
 will be replaced by spaces if you have the settings above.
 
 #### Caveats
-Even if you have the settings mentioned above, vs code will ***ignore those*** 
+Even if you have the settings mentioned above, VS Code will ***ignore those*** 
 on certain file types (ignore is is the wrong word, the settings are simply overridden by language specific settings that makes sense for that particular language), ie.
 - makefiles
 - *.go
