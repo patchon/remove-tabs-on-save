@@ -22,7 +22,7 @@ color, which is, yes annoying. So to get rid of that annoyance I wrote this exte
 ### How about the inbuilt support ?
 Well that's the thing, even if you set
 
-* ```editor.tabSize : 2 ```,
+* ```editor.tabSize : 2 ```
 * ```editor.insertSpaces: true```
 * ```editor.detectIndentation : false```
 
@@ -34,8 +34,8 @@ then, as mentioned above, tabs within commented lines are ignored. New tabs
 will be replaced by spaces if you have the settings above.
 
 #### Caveats
-Even if you have the settings mentioned above, vs code will ***ignore those***
-on certain file types, ie.
+Even if you have the settings mentioned above, vs code will ***ignore those*** 
+on certain file types (ignore is is the wrong word, the settings are simply overridden by language specific settings that makes sense for that particular language), ie.
 - makefiles
 - *.go
 
@@ -44,7 +44,7 @@ can override that by defining the above settings specifically for that language)
 Which however doesn't make sense since *makefiles* wont work without tabs,
 and for *go* you probably use ***gofmt*** which will convert the spaces to tabs.
 
-¯\_(ツ)_/¯
+¯\\_(ツ)_/¯
 
 ## Release Notes
 ### 1.2.0
