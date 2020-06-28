@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to remove-tabs-on-save will be documented in this file.
 
+## [1.2.1] - 2020-06-28
+### Changed
+- Updated readme
+
 ## [1.2.0] - 2020-06-23
 ### Changed
 - Make sure to not replace text if no tabs are detected
