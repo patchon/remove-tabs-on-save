@@ -47,9 +47,11 @@ and for *go* you probably use ***gofmt*** which will convert the spaces to tabs.
 ¯\\_(ツ)_/¯
 
 ## Release Notes
+### 1.2.3
+- Changed so we activate on 'onStartupFinished'
+
 ### 1.2.2
 - Bumped various npm packages suggested by github
-- Changed so we activate on 'onStartupFinished'
 - Added LICENSE
 
 ### 1.2.1

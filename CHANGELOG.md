@@ -1,10 +1,13 @@
 # Changelog
 All notable changes to remove-tabs-on-save will be documented in this file.
 
+## [1.2.3] - 2021-11-09
+### Changed
+- Changed so we activate on 'onStartupFinished'
+
 ## [1.2.2] - 2021-11-09
 ### Changed
 - Bumped various npm packages suggested by github
-- Changed so we activate on 'onStartupFinished'
 - Added LICENSE
 
 ## [1.2.1] - 2020-06-28
