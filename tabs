@@ -1,0 +1,10 @@
+MOV   EAX, nVariable
+PUSH  EAX
+CALL  SomeFunc
+ADD   ESP, 4
+
+#include <stdio.h>
+int main() {
+  printf("Hello, World!");
+  return 0;
+}

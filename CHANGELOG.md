@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to remove-tabs-on-save will be documented in this file.
 
+## [1.2.4] - 2022-01-05
+### Changed
+- Rewrote most of the plugin so it takes tab position into consideration when replacing tabs.
+- Fixed so selecton and cursor stays the same after replacement.
+- Added debug option. 
+
 ## [1.2.3] - 2021-11-09
 ### Changed
 - Changed so we activate on 'onStartupFinished'

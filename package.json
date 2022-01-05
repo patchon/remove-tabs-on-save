@@ -3,7 +3,7 @@
   "displayName": "Remove Tabs On Save",
   "description": "Convert all tabs to spaces on save, no more - no less.",
   "publisher": "redlin",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "license": "GPL-3.0-or-later",
   "engines": {
     "vscode": "^1.46.0"
@@ -30,7 +30,8 @@
         "remove-tabs-on-save.ignoreMakefiles": {
           "type": "boolean",
           "default": true,
-          "description": "Ignore Makefiles (recommended)."
+          "description": "Ignore Makefiles (recommended).",
+          "order": 1
         },
         "remove-tabs-on-save.ignoreFileExtensions": {
           "type": "array",
@@ -41,7 +42,14 @@
             "first-time",
             "*.go"
           ],
-          "description": "Ignore files with this extension (ie. *.css, *.html, *.cpp, *.go)."
+          "description": "Ignore files with this extension (ie. *.css, *.html, *.cpp, *.go).",
+          "order": 2
+        },
+        "remove-tabs-on-save.debug": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable debug output",
+          "order": 3
         }
       }
     }

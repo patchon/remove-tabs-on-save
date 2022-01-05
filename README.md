@@ -47,6 +47,11 @@ and for *go* you probably use ***gofmt*** which will convert the spaces to tabs.
 ¯\\_(ツ)_/¯
 
 ## Release Notes
+### 1.2.4
+- Rewrote most of the plugin so it takes tab position into consideration when replacing tabs.
+- Fixed so selecton and cursor stays the same after replacement.
+- Added debug option. 
+
 ### 1.2.3
 - Changed so we activate on 'onStartupFinished'
 
